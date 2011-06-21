@@ -1,14 +1,15 @@
 # Name of the blog
-blog_name = 'My Blog'
+blog_name = 'idea Lab'
 
 # Your name (used for copyright info)
-author_name = 'the author'
+author_name = 'Naman Kumar'
 
 # (Optional) slogan
-slogan = 'This is my blog'
+slogan = 'you know...'
 
 # The hostname this site will primarially serve off (used for Atom feeds)
-host = 'localhost:8080'
+host = 'namank.com'
+#host = 'localhost:8080'
 
 # Selects the theme to use. Theme names correspond to directories under
 # the 'themes' directory, containing templates and static content.
@@ -25,21 +26,21 @@ page_templates = {
 #   year - the year the post was published in
 #   month - the month the post was published in
 #   day - the day the post was published in
-post_path_format = '/%(year)d/%(month)02d/%(slug)s'
+post_path_format = '/%(slug)s'
 
 # A nested list of sidebar menus, for convenience. If this isn't versatile
 # enough, you can edit themes/default/base.html instead.
 sidebars = [
-  ('Blogroll', [
-    '<a href="http://blog.notdot.net/">Nick Johnsonz</a>',
-    '<a href="http://www.billkatz.com/">Bill Katz</a>',
-    '<a href="http://www.codinghorror.com/blog/">Coding Horror</a>',
-    '<a href="http://craphound.com/">Craphound</a>',
-    '<a href="http://www.neopythonic.blogspot.com/">Neopythonic</a>',
-    '<a href="http://www.schneier.com/blog/">Schneier on Security</a>',
+  ("me & i", [
+    '<a href="http://www.namank.com/What-up">who</a>',
+    '<a href="http://ca.linkedin.com/in/namankumar">work</a>',
+    '<a href="http://www.twitter.com/naman_k">tweets</a>',
+    '<a href="https://github.com/namankumar">open source</a>', 
   ]),
+ ('happenings', [
+    '<a href="http://tedxwaterloo.com">tedXwaterloo</a>',
+ ]),
 ]
-
 # Number of entries per page in indexes.
 posts_per_page = 10
 
@@ -48,13 +49,13 @@ html_mime_type = "text/html; charset=utf-8"
 
 # To use disqus for comments, set this to the 'short name' of the disqus forum
 # created for the purpose.
-disqus_forum = None
+disqus_forum = "namankumar"
 
 # Length (in words) of summaries, by default
-summary_length = 200
+summary_length = 50
 
 # If you want to use Google Analytics, enter your 'web property id' here
-analytics_id = None
+analytics_id = "UA-22212468-1"
 
 # If you want to use PubSubHubbub, supply the hub URL to use here.
 hubbub_hub_url = 'http://pubsubhubbub.appspot.com/'
@@ -85,7 +86,7 @@ url_prefix = ''
 
 # Defines where the user is defined in the rel="me" of your pages.
 # This allows you to expand on your social graph.
-rel_me = None
+rel_me = "http://twitter.com/naman_k"
 
 # For use a feed proxy like feedburne.google.com
 feed_proxy = None
