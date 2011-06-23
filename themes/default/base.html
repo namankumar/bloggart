@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>{% block title %}Bloggart{% endblock %}</title>
+  <title>{% block title %}{% endblock %}</title>
   {% block style %}
   <link rel="stylesheet" type="text/css" media="screen" href="{{config.url_prefix}}/static/{{config.theme}}/css/screen.css" />
   {% endblock %}
@@ -15,25 +15,21 @@
   <link rel="me" href="{{config.rel_me}}" />
   {% endif %}
 
-  {% if config.google_friends_id %}
-  <!-- Include the Google Friend Connect javascript library. -->
-  <script type="text/javascript" src="http://www.google.com/friendconnect/script/friendconnect.js"></script>
-  {% endif %}
-
   {% block head %}{% endblock %}
 </head>
 <body>
-	<div id="header-wrap"><div id="header" class="container_16">						
+	<div id="header-wrap"><div id="header-top"></div>									
+	<div id="header" class="container_16">
 		<h1 id="logo-text"><a href="{{config.url_prefix}}/" title="">{{config.blog_name}}</a></h1>		
-		<p id="intro">{{config.slogan}}</p>
+		
+		<p id="intro">{{config.slogan}}</p>			
 		<div  id="nav">
 			<ul>
-				<li{% ifequal generator_class "IndexContentGenerator" %} id="current"{% endifequal %}><a href="{{config.url_prefix}}/">Home</a></li>
 				<li{% ifequal generator_class "ArchiveIndexContentGenerator" %} id="current"{% else %}{% ifequal generator_class "ArchivePageContentGenerator" %} id="current"{% endifequal %}{% endifequal %}><a href="{{config.url_prefix}}/archive/">Archive</a></li>
+				<li><a href="{{config.url_prefix}}/What-up">About</a></li>
         {% block menu %}{% endblock %}
 			</ul>
 		</div>		
-		<div id="header-image"></div> 
 	</div></div>
 	<div id="content-outer"><div id="content-wrapper" class="container_16">
 		<div id="main" class="grid_12">
@@ -51,45 +47,13 @@
         </div>
       {% endfor %}
 
-     {% if config.google_friends_id and config.google_friends_members %}
-        <div class="sidemenu">
-          <h3>Members</h3>
-          <!-- Define the div tag where the gadget will be inserted. -->
-          <div id="div-1279810020886984279" style=""></div>
-          <!-- Render the gadget into a div. -->
-          <script type="text/javascript">
-            var skin = {};
-            skin['BORDER_COLOR'] = '#cccccc';
-            skin['ENDCAP_BG_COLOR'] = '#fff';
-            skin['ENDCAP_TEXT_COLOR'] = '#444';
-            skin['ENDCAP_LINK_COLOR'] = '#0000cc';
-            skin['ALTERNATE_BG_COLOR'] = '#ffffff';
-            skin['CONTENT_BG_COLOR'] = '#ffffff';
-            skin['CONTENT_LINK_COLOR'] = '#000';
-            skin['CONTENT_TEXT_COLOR'] = '#666';
-            skin['CONTENT_SECONDARY_LINK_COLOR'] = '#7777cc';
-            skin['CONTENT_SECONDARY_TEXT_COLOR'] = '#666666';
-            skin['CONTENT_HEADLINE_COLOR'] = '#666';
-            skin['NUMBER_ROWS'] = '4';
-            google.friendconnect.container.setParentUrl('/' /* location of rpc_relay.html and canvas.html */);
-            google.friendconnect.container.renderMembersGadget(
-            { id: 'div-1279810020886984279',
-            site: '{{ config.google_friends_id }}'
-            }, skin);
-          </script>
-        </div>
-      {% endif %}
-
-
-
-
 		</div>		
 	</div></div>
 	<div id="footer-wrapper" class="container_16">
 		<div id="footer-bottom">
 			<p class="bottom-left">			
 			&nbsp; &copy; {{config.author_name}} &nbsp; &nbsp;
-			Design by : <a href="http://www.styleshout.com/">styleshout</a>												
+			Theme adapted from <a href="http://www.styleshout.com/">Styleshout</a>												
 			</p>	
 			<p class="bottom-right" >
 				<a href="{{config.url_prefix}}/">Home</a> |
