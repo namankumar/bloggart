@@ -199,14 +199,15 @@ input.button {
 #header {
 	position: relative;
 	margin: 0 auto;
-	background: url(../images/border.gif) repeat-x left bottom; 	
-	height: 302px;	
+	height: 302px;
+	border-bottom: 1px dashed #E8E8E8;	
+		
 }
 #header h1#logo-text { margin: 0; padding: 0; }
 #header h1#logo-text a {
 	position: absolute; 
 	margin: 0; padding: 0 5px 0 0;
-	font: normal 70px Georgia, 'Times New Roman', Times, serif;
+	font: normal 85px Georgia, 'Times New Roman', Times, serif;
 	letter-spacing: -6px;
 	color: #93b876;
 	text-decoration: none;
@@ -220,7 +221,7 @@ input.button {
 	margin: 0; padding: 0;
 	font-family: Georgia, 'Times New Roman', Times, Serif;
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.6em;
 	font-style: italic;
 	letter-spacing: -.5px;
@@ -228,70 +229,37 @@ input.button {
 	width: 400px;
 	
 	/* change the values of top and left to adjust the position */
-	top: 175px; left: 110px;		
+	top: 175px; left:90px;		
 }
 #header #header-image {
 	position: absolute;
-	background: url(../images/header-bloggart-watermark.png) top right no-repeat;
 	width: 400px;
 	height: 300px;	
 	right: 10px; top: 0;	
-}
-
-/* header quick search */
-#header form#quick-search {
-	position: absolute;
-	top: 10px; right: 0;
-	padding: 0; margin: 0;
-	border: none;
-	width: 270px; height: 33px;
-	background: #F5F4F3 url(../images/header-search.gif) no-repeat;	
-	z-index: 999999;
-}
-#header form#quick-search p {
-	margin: 0; padding: 0;		
-}
-#header form#quick-search input {
-	border: none;
-	background: transparent;
-	color: #bababa;
-	float: left;
-	margin: 0; padding: 5px;
-}
-#header form#quick-search .tbox {
-	margin: 6px 0 0 5px; 
-	width: 216px;	
-	display: inline;		
-}
-#header #search form#quick-search .btn{
-	width: 25px; height: 25px;		
-}
-#header form#quick-search label {
-	display: none;
 }
 
 /*  navigation  */
 #header #nav {
 	position: absolute;
 	margin: 0; padding: 0;		
-	width: 880px;	
+	width: 100%;	
 	left: 0;	top: 5px;		
 }
 #header #nav ul {
-	float: left;	
+	float: right;	
 	list-style: none;	
 	margin: 5px 0 0 0;
-	height: 45px;
+	height: 10px;
 	padding: 0 0 0 15px;					
 }
 #header #nav ul li {
-	float: left;
-	margin: 0; padding: 0 0 0 10px;		
+	float: right;
+	margin: 0; padding: 0 0 0 5px;		
 }
 #header #nav ul li a {
-	float: left;
+	float: right;
 	margin: 0;
-	padding: 0 15px 0 5px;
+	padding: 0 10px 0 5px;
 	color: #666666;
 	font: bold 14px/40px 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-Serif;
 	text-transform: uppercase;	
