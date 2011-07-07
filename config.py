@@ -5,10 +5,10 @@ blog_name = 'idea Lab'
 author_name = 'Naman Kumar'
 
 # (Optional) slogan
-slogan = 'you know...'
+slogan = 'dangerously convenient, surprisingly acceptable'
 
 # The hostname this site will primarially serve off (used for Atom feeds)
-host = 'namank.com'
+host = 'www.namank.com'
 #host = 'localhost:8080'
 
 # Selects the theme to use. Theme names correspond to directories under
@@ -85,7 +85,7 @@ url_prefix = ''
 
 # Defines where the user is defined in the rel="me" of your pages.
 # This allows you to expand on your social graph.
-rel_me = "http://www.namank.com/who"
+rel_me = "https://plus.google.com/113489023394453793264/about"
 
 # For use a feed proxy like feedburne.google.com
 feed_proxy = None
