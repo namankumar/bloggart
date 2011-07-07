@@ -16,13 +16,17 @@
   {% endif %}
 
   {% block head %}{% endblock %}
+	<meta name="keywords" content="naman, kumar, design, waterloo, canada, india">
+	<meta name="description" content="Naman Kumar - Computer engineer in Waterloo, Canada. Aspiring design engineer led by thought leadership and an entrepreneurial mindset.">
+	<meta name="google-site-verification" content="pw-fzlL6Gj-Wua4MvYgz5d7CFIoYckvjDkic7RfF0a8" />
+
 </head>
 <body>
 	<div id="header-wrap"><div id="header-top"></div>									
 	<div id="header" class="container_16">
 		<h1 id="logo-text"><a href="{{config.url_prefix}}/" title="">{{config.blog_name}}</a></h1>		
 		
-		<p id="intro">{{config.slogan}}</p>			
+		<p id="intro">{{config.slogan}} {{self.request.path}}</p>			
 		<div  id="nav">
 			<ul>
 				<li{% ifequal generator_class "ArchiveIndexContentGenerator" %} id="current"{% else %}{% ifequal generator_class "ArchivePageContentGenerator" %} id="current"{% endifequal %}{% endifequal %}><a href="{{config.url_prefix}}/archive/">Archive</a></li>
