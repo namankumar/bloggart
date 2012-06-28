@@ -31,15 +31,11 @@ post_path_format = '/%(slug)s'
 # A nested list of sidebar menus, for convenience. If this isn't versatile
 # enough, you can edit themes/default/base.html instead.
 sidebars = [
-  ("designer", [
-  	'<a href="http://www.namank.com/who">portfolio</a>',
-    '<a href="http://ca.linkedin.com/in/namankumar">linkedin</a>',
- 	'<a href="https://github.com/namankumar">open source</a>', 
- ]),
- ('around', [
-	'<a href="http://www.quora.com/Naman-Kumar">quora</a>',
- 	'<a href="http://www.twitter.com/naman_k">tweets</a>',
- ]),
+  ("around", [
+    '<a href="http://ca.linkedin.com/in/namankumar">work</a>',
+    '<a href="http://www.twitter.com/naman_k">tweets</a>',
+    '<a href="https://github.com/namankumar">open source</a>', 
+  ]),
  ('happenings', [
     '<a href="http://tedxwaterloo.com">tedXwaterloo</a>',
  ]),

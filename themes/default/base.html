@@ -2,11 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <title>{% block title %}{% endblock %}</title>
-
   {% block style %}
   <link rel="stylesheet" type="text/css" media="screen" href="{{config.url_prefix}}/static/{{config.theme}}/css/screen.css" />
   {% endblock %}
-  
   {% if config.highlighting_style %}
   <link rel="stylesheet" type="text/css" media="screen" href="{{config.url_prefix}}/static/{{config.theme}}/css/pygments_{{config.highlighting_style}}.css" />
   {% endif %}
@@ -19,20 +17,19 @@
 
   {% block head %}{% endblock %}
 	<meta name="keywords" content="naman, kumar, design, waterloo, canada, india">
-	<meta name="description" content="Naman Kumar - Computer engineer in Waterloo, Canada. Design thinker led by thought leadership and an entrepreneurial mindset.">
-
+	<meta name="description" content="Naman Kumar - Computer engineer in Waterloo, Canada. Aspiring design engineer led by thought leadership and an entrepreneurial mindset.">
+	<meta name="google-site-verification" content="pw-fzlL6Gj-Wua4MvYgz5d7CFIoYckvjDkic7RfF0a8" />
 
 </head>
 <body>
-
 	<div id="header-wrap"><div id="header-top"></div>									
 	<div id="header" class="container_16">
 		<h1 id="logo-text"><a href="{{config.url_prefix}}/" title="">{{config.blog_name}}</a></h1>		
 		
-		<p id="intro">{{config.slogan}}</p>			
+		<p id="intro">{{config.slogan}} {{self.request.path}}</p>			
 		<div  id="nav">
 			<ul>
-				<li><a href="{{config.url_prefix}}/archive/">Archive</a></li>
+				<li{% ifequal generator_class "ArchiveIndexContentGenerator" %} id="current"{% else %}{% ifequal generator_class "ArchivePageContentGenerator" %} id="current"{% endifequal %}{% endifequal %}><a href="{{config.url_prefix}}/archive/">Archive</a></li>
 				<li><a href="{{config.url_prefix}}/What-up">About</a></li>
         {% block menu %}{% endblock %}
 			</ul>
@@ -60,15 +57,17 @@
 		<div id="footer-bottom">
 			<p class="bottom-left">			
 			&nbsp; &copy; {{config.author_name}} &nbsp; &nbsp;
-		
+			Theme adapted from <a href="http://www.styleshout.com/">Styleshout</a>												
 			</p>	
 			<p class="bottom-right" >
+				<a href="{{config.url_prefix}}/">Home</a> |
         <a href="{% if config.feed_proxy %}
 	        {{ config.feed_proxy }}
 	      {% else %}
 	        {{config.url_prefix}}/feeds/atom.xml
 	      {% endif %}">Atom</a> |
-			 <a href="http://www.styleshout.com/">Styleshout</a>													
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | 
+		   	<a href="http://validator.w3.org/check/referer">XHTML</a>
 			</p>
 		</div>	
 	</div>
