@@ -3,22 +3,24 @@
 {% block body %}
   {% for post in posts %}
     <h2><a href="{{config.url_prefix}}{{post.path}}">{{post.title|escape}}</a></h2>
-    <p class="post-info">
-      Posted by {{config.author_name}}
-      {% if post.tags %}
-        | Filed under
-        {% for tag in post.tag_pairs %}
-          <a href="{{config.url_prefix}}/tag/{{tag.1|escape}}">{{tag.0|escape}}</a>{% if not forloop.last %},{% endif %}
-        {% endfor %}
-      {% endif %}
+    <p class="post-info" style="text-align:right;">
+      <span style="cursor:pointer;" onclick="http://www.namank.com/What-up"> {{config.author_name}} </span>
     </p>
-    {{post.summary}}
+    <div style="padding-left:10px">
+      {{post.summary}}
+    </div>
     <p class="postmeta">
-      <a href="{{config.url_prefix}}{{post.path}}" class="readmore">Read more</a> |
+      {% comment %}
       {% if config.disqus_forum %}
         <a href="{{config.url_prefix}}{{post.path}}#disqus_thread" class="readmore">Comments</a> |
       {% endif %}
-      <span class="date">{{post.published_tz|date:config.date_format}}</span>
+	{% endcomment %}
+      <span class="date">{{post.published_tz|date:config.date_format}} | {% if post.tags %} 
+        {% for tag in post.tag_pairs %}
+          <a class="post-info"  href="{{config.url_prefix}}/tag/{{tag.1|escape}}">{{tag.0|escape}}</a>{% if not forloop.last %},{% endif %}
+        {% endfor %}
+      {% endif %}
+</span>
     </p>
   {% endfor %}
   {% if prev_page %}
