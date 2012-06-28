@@ -1,5 +1,55 @@
-body {
-  margin: 10px;
-  color: #333;
+#body_cont{
+ width: 980px;
+ margin: 0px auto;
+}
+
+#cont_left{
+width: 45%;
+height: 650px;
+//border: 1px solid red;
+float: left;
+}
+
+
+#cont_right{
+width: 50%;
+height: 650px;
+//border: 1px solid red;
+float: left;
+}
+
+#title_block{
+width: 100%;
+padding-top:150px;
+text-align: right;
+}
+
+#title{
+font: normal 85px Georgia, 'Times New Roman', Times, serif;
+font-size: 100px;
+letter-spacing: -6px;
+}
+
+#headline{
+margin-top: -20px;
+}
+
+#name{
+width: 98%;
+
+letter-spacing: -2px;
+font: normal 85px Georgia, 'Times New Roman', Times, serif;
+font-size: 24px;
+text-align: right;
+}
+
+#headline{
+}
+
+#my_canvas{
+width: 100%;
+height: 90%;
+border: 4px solid black;
+border-radius: 15px;
 }
 

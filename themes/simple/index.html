@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+    <title>{% block title %}Bloggart{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" media="screen"
+	  href="/static/{{config.theme}}/css/screen.css" />
+    <link rel="alternate" type="application/atom+xml" href="/feeds/atom.xml" />
+    {% block head %}{% endblock %}
+  </head>
+
+  <body>
+
+
+    <div id="body_cont">
+      <div id="cont_left">
+	<div id="title_block">
+	  <span id="title">
+		{{config.blog_name}}
+	</span>
+<br />
+	<span id="headline">
+	  {{config.slogan}}
+	</div>
+
+
+	</div>
+      </span>
+
+
+      <div id="cont_right">
+	<div id="name">
+	  naman kumar
+	</div>
+	
+	<div id="my_canvas">
+	  {% block body %} {% endblock %}
+{% for post in posts %}
+    <h2><a href="{{config.url_prefix}}{{post.path}}">{{post.title|escape}}</a></h2>
+    <p class="post-info">
+      Posted by {{config.author_name}}
+      {% if post.tags %}
+        | Filed under
+        {% for tag in post.tag_pairs %}
+          <a href="{{config.url_prefix}}/tag/{{tag.1|escape}}">{{tag.0|escape}}</a>{% if not forloop.last %},{% endif %}
+        {% endfor %}
+      {% endif %}
+    </p>
+    {{post.summary}}
+    <p class="postmeta">
+      <a href="{{config.url_prefix}}{{post.path}}" class="readmore">Read more</a> |
+      {% if config.disqus_forum %}
+        <a href="{{config.url_prefix}}{{post.path}}#disqus_thread" class="readmore">Comments</a> |
+      {% endif %}
+      <span class="date">{{post.published_tz|date:config.date_format}}</span>
+    </p>
+  {% endfor %}
+
+
+
+	  
+	</div>
+			    
+
+	{% comment %}
+	<ul><li><a href="/">Home</a></li>{% block menu %}{% endblock %}</ul>
+	{% block body %}{% endblock %}
+	{% endcomment %}
+      </div>
+    </div>
+
+
+  </body>
+</html>
