@@ -8,8 +8,8 @@ author_name = 'Naman Kumar'
 slogan = 'dangerously convenient, surprisingly acceptable'
 
 # The hostname this site will primarially serve off (used for Atom feeds)
-host = 'www.namank.com'
-#host = 'localhost:8080'
+#host = 'www.namank.com'
+host = 'localhost:8081'
 
 # Selects the theme to use. Theme names correspond to directories under
 # the 'themes' directory, containing templates and static content.
@@ -31,11 +31,15 @@ post_path_format = '/%(slug)s'
 # A nested list of sidebar menus, for convenience. If this isn't versatile
 # enough, you can edit themes/default/base.html instead.
 sidebars = [
-  ("around", [
-    '<a href="http://ca.linkedin.com/in/namankumar">work</a>',
-    '<a href="http://www.twitter.com/naman_k">tweets</a>',
-    '<a href="https://github.com/namankumar">open source</a>', 
-  ]),
+  ("designer", [
+  	'<a href="http://www.namank.com/who">portfolio</a>',
+    '<a href="http://ca.linkedin.com/in/namankumar">linkedin</a>',
+ 	'<a href="https://github.com/namankumar">open source</a>', 
+ ]),
+ ('around', [
+	'<a href="http://www.quora.com/Naman-Kumar">quora</a>',
+ 	'<a href="http://www.twitter.com/naman_k">tweets</a>',
+ ]),
  ('happenings', [
     '<a href="http://tedxwaterloo.com">tedXwaterloo</a>',
  ]),

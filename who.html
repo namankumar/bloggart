@@ -1,0 +1,269 @@
+		    <style>
+
+	body
+	{
+		overflow: hidden;
+	}
+	li
+	{
+		list-style:none;
+		text-indent: -25px;
+		padding-left: 25px;
+	}
+
+	#wrapper
+	{
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 14%;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		overflow:hidden;
+	}
+
+	#name
+	{
+		margin-top: -20px;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 27px;
+		text-align:right;
+		letter-spacing: -1px;
+	}
+
+	#headline
+	{
+		position: absolute;
+		display: block;
+		margin-left: -150px;
+		margin-top:-80px;
+	}
+	#headline #title
+	{
+		font-style: italic;
+		font-size: 17px;
+	}
+
+	#accd div #title
+	{
+		/* --anim--  display the titles on page load */
+		display: block;
+		font-size:48px;
+		letter-spacing:-2px;
+		-webkit-transition: color .8s linear;
+		-moz-transition: color .8s linear;
+		-o-transition: color .8s linear;
+		transition: color .8s linear;
+	}
+
+	#accd div #content
+	{
+		font-size: 14px;
+		font-family: Verdana, Helvetica, sans-serif;
+		
+		/* --anim-- keep content hidden on page load */
+		height: 17px;	
+		overflow:hidden;
+	    transition: height ease-in-out 500ms;
+	    -o-transition: height ease-in-out 500ms;
+	    -moz-transition: height ease-in-out 500ms;
+	    -webkit-transition: height ease-in-out 500ms;
+	}
+
+	#accd:hover div #title
+	{
+		/* --anim--  blur unfocused titles */
+		color: #D2D2D2;
+	}
+	
+	#accd:hover div:hover #title
+	{
+		/* --anim--  blacken focused titles */
+		color: black;
+	}
+	#accd:hover #tech:hover #content
+	{
+		/* --anim--  display content on hover */
+		height:400px;
+		overflow: hidden;
+	}
+
+	#accd:hover div:hover #content
+	{
+		/* --anim--  display content on hover */
+		height:195px;
+		overflow: hidden;
+	}
+
+
+	#tech
+	{
+		/*	background-color: #8A8F95;
+		background-color: #E97800; */
+	}
+	table
+	{
+		border: 2px outset black;
+		border-collapse: collapse;
+		font-size: 14px;
+		font-family: Verdana, Helvetica, sans-serif;
+	}
+	tr
+	{
+		text-align: center;
+		vertical-align: middle;
+	}
+	td
+	{
+		border: 1px inset black;
+		width: 200px;
+		height: 80px;
+	}
+	#creative
+	{
+		/* background-color: #5498BD; */
+	}
+	#pDev
+	{
+		/* background-color: #7DA252; */
+	}
+	#kinesLearn
+	{
+		/* background-color: #BF642D; */
+	}
+	
+	#content #quote
+	{
+		font-style:italic; 
+		font-size:12px;;
+	}
+	</style>
+
+<div id="wrapper">
+	<div id="headline">	
+		<span id="title">
+				I'm a problem solver. Next step: designer. 
+		</span>
+		<span style="display:none;">
+		Design, I believe is the essence of how something is made. This is nothing new - mathematicians and poets have for centuries raved of beauty available to them. While that beauty was privy to only those in the know, today, the element of design changes that. 'Designing' something is making sure it can 
+		</span>
+	</div>
+	<div id="accd">
+		<div id="tech">
+			<span id="title">Technical life</span>
+			<div id="content">
+				<table style="margin: 18px 0 0 18px;">
+					<tr>
+						<th>
+							Student <br/> Researcher
+						</th>
+						<th>
+							Freelance <br /> Developer
+						</th>
+						<th>
+							Engineering <br /> Student
+						</th>
+					</tr>
+					<tr>
+						<td>Implement timing semantics for Abstract State Machines</td>
+						<td>iPhone app to analyze components of an  audio stream</td>
+						<td>Design, develop a real time operating system</td>
+					</tr>
+					<tr>
+						<td>Use Abstract State Machines to generate OpenCL(GPU)</td>
+						<td>Android app to streamline work models of neuroscientists - result of an HCI study</td>
+					<td>
+						Develop a WAV music player on Alterra DE2</td>
+					
+					</tr>
+					<tr>
+					<td>
+						Use Clang to co-simulate SystemC on GPU and CPU
+					</td>
+					<td>
+						PlayBook game of Snake
+					</td>
+					<td>
+						Design, develop a lexical parser and grammar checker for Oberon in C
+					</td>
+					</tr>
+					<tr>
+					<td>
+					</td>
+					<td>
+						Website design and development for local non-profit
+					</td>
+					<td>
+						Design, develop a calculator and clock for Motorola Coldfire in Assembly
+					</td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
+	
+		<div id="creative">
+			<span id="title">Integrative thinking</span>
+			<div id="content">
+				<ul><li>
+				Study human behaviour and personality theories for 2 years
+				</li><li>
+				Study the theory of Contextual Inquiry in Design 
+				</li><li>
+				Waterloo Engineering Competition, Senior Design - first place
+				</li><li>
+				Waterloo Debate Competition - top rookie team
+				</li><li>
+				Junkyard Wars, 10' catapult - first place
+				</li><li>
+				Egg Drop Contest, 25' - success
+				</li><li>
+				Real World Knowledge - took a year off school to do startup
+				</li><li>
+				Experimenting - currently figuring out how to build and sustain a high performance team
+				</li><li>
+				Read, Write, Extempore: Hindi and English. In progress: German	
+				</li></ul>
+			</div>
+		</div>
+<div id="name">
+ping@namank.com
+</div>
+		<div id="pDev">
+			<span id="title">Personal development</span>
+			<div id="content">
+				<ul><li>
+				Dream. <span id="quote"> "But...why not!"</span>
+				</li><li>
+				Actualize. <span id="quote"> "The world is a sandbox...make of it what you must."</span>
+				</li><li>
+				Embrace Failure. <span id="quote"> "You have to risk going too far to discover just how far you can really go."</span>
+				</li><br /><li>
+				Repeat till Success. <span id="quote"> "Never ever ever ever give up."</span>
+				</li><br /><br /><br /><li>
+				Repeat till Excellence.	<span id="quote"> "Do what is necessary. Then what is possible. Pretty soon you are doing the impossible."</span>
+				</li></ul>
+			</div>
+		</div>
+		
+		<div id="kinesLearn">	
+			<span id="title">Kinesthetic learning</span>
+			<div id="content">
+				<ul><li>
+                         Avid new snowboarder
+				</li><li>
+					Arctic Winter Games for Badminton - selected twice but never went 
+				</li><li>
+					Long Distance Running; trained to increase stamina from 0k to 10k - success 
+				</li><li>
+					Speed Running - training to decrease 10 minutes/mile to 6 minutes/mile 
+				</li><li>
+					Aikido, Mixed Martial Arts - trained for 4 months. Will go back in 2 years
+				</li><li>
+					Skydiving - hope to be an instructor some day
+				</li><li>
+					State Level Swimmer - third place (grade 8)
+				</li></ul>
+			</div>
+		</div>
+	</div>	
+</div>
