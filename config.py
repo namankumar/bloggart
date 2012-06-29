@@ -38,7 +38,7 @@ sidebars = [
  ]),
  ('around', [
 	'<a href="http://www.quora.com/Naman-Kumar">quora</a>',
- 	'<a href="http://www.twitter.com/naman_k">tweets</a>',
+ 	'<a href="http://www.twitter.com/naman_k">twitter</a>',
  ]),
  ('happenings', [
     '<a href="http://tedxwaterloo.com">tedXwaterloo</a>',
