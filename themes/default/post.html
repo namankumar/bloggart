@@ -4,7 +4,7 @@
 {% block body %}
   <h2>{{post.title|escape}}</h2>
     <p class="post-info" style="text-align:right">
-      <span style="cursor:pointer;" onclick="http://www.namank.com/What-up"> {{config.author_name}} </span>
+      <span style="cursor:pointer;" onclick="window.location='http://www.namank.com/What-up'"> {{config.author_name}} </span>
     </p>
     <div style="padding-left:10px;" id="post_content"> 
   {{post.rendered}}

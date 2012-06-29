@@ -4,7 +4,7 @@
   {% for post in posts %}
     <h2><a href="{{config.url_prefix}}{{post.path}}">{{post.title|escape}}</a></h2>
     <p class="post-info" style="text-align:right;">
-      <span style="cursor:pointer;" onclick="http://www.namank.com/What-up"> {{config.author_name}} </span>
+      <span style="cursor:pointer;" onclick="window.location='http://www.namank.com/What-up'"> {{config.author_name}} </span>
     </p>
     <div style="padding-left:10px">
       {{post.summary}}
@@ -29,6 +29,7 @@
   {% if next_page %}
     <a id="next" href="{{config.url_prefix}}{{next_page}}">Older</a>
   {% endif %}
+    {% comment %}
   {% if config.disqus_forum %}
     <script type="text/javascript">
     //<![CDATA[
@@ -45,4 +46,5 @@
     //]]>
     </script>
   {% endif %}
+{% endcomment %}
 {% endblock %}
