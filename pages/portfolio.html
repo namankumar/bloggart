@@ -1,279 +1,287 @@
-<!DOCTYPE html>
 <html>
-<head>
-<title>
-Naman Kumar
-</title>
+  <head>
+  </head>
+  <style>
+    .frame{
+    border: 1px solid blue;
+    width: 980px;
+    height: 600px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+    
+    .title{
+    width: 100%;
+    border: 1px solid blue;
+    text-align: right;
+    text-transform: uppercase;
+    display: block;
+    }
 
-<style type="text/css">
-			.underline
-			{ text-decoration: underline; }
-			.italics
-			{ font-style: italic; }
-			.bold
-			{ font-weight: bold; }
-			.inline-highlight
-			{ 
-				font-weight: bold;
-				font-size: 80%; 
-			}
+    #education #main{
+    border: 1px solid blue;
+    margin: 0px auto;
+    margin-top: 10%;
+    
+    margin-bottom: 50px;
+    width: 500px;
+    }
 
-			.container
-            {
-		//		padding-left: 50px;
-		  }
-            .container .title
-            {
-                width: 79%;
-				float: left;
-                border: 1px solid Blue;
-                margin: 1px;
-            }
-            .container .date
-            {
-                width: 20%;
-				float: left;
-                border: 1px solid Blue;
-                margin: 1px;
-            }
+    #education .subclass{
+    border: 1px solid blue;    
+    height:20px;
+    width: 20%;
+    display: inline-block;
+    margin: 0px auto;
+    }
 
-           .container .content
-            {
-                width: 90%;
+    #research .subClass{
+    border: 1px solid blue;
+    width: 200px;
+    height: 200px;
+    }
 
-				padding-bottom: 10px;
-				float: left;
-				padding-left: 60px;
-                border: 1px solid red;
-                margin: 1px;
-            }
-			
-			.container .content .descr
-			{
-				width: 60%;
-				float: left;
-                border: 1px solid red;
-			}
-			.container .content .pics
-			{
-				width: 39%;
-				float: left;
-                border: 1px solid red;
-			}	
-			
-			body
-			{
-				width: 980px;
-				font-size: 13pt; 
-				//border: 1px solid;
-				font-family: Georgia, 'Times New Roman', Times, serif;
-			}
+    #research #systemc{
+    margin: 0px auto;
+    margin-top: 100px;
+    display: block;
+    width: 500px;
+    }
+    
+    #research #asm{
+    margin-top: 75px;
+    display: inline-block
+    }
+    
+    #research #tm{
+    margin-top: 75px;
+    display: inline-block
+    }
 
-        </style>
-</head>
+    #unbounds{
+    position: relative;
+    }
 
-<body>
-<div class="section-title">	
-PROJECTS
-</div>
-<br>
-<div style="padding-left: 50px;">
-All projects follow practices in Agile development and Design Thinking utilizing empathy and creativity as instruments. <br>
-Define Objective -> Research -> Ideate Solutions -> Prototype -> Gather Feedback -> Refine Prototype. Repeat.
-</div>			<div class="container" style="padding-top: 10px; page-break-after:always;">
-				<div class="title">
-					<span class="bold">Human Computer Interaction Study: Neuroscience Researchers </span><br>
-					<span class="underline">Study an expert group of users and improve their work-practices through technology.</span>
-				</div>
-				<div class="date">
-				Sept - Dec 2011
-				</div>
-				<div class="content">
-						<div class="descr">
-							Use Contextual Design to study Neuroscience Researchers in their natural space - <span class="inline-highlight" >User Interviews, Observations </span><br>
-							Analyze data to formulate possible work-practice improvements<br>
-							Synthesize possible solutions to address formulated improvements - <span class="inline-highlight" >Wireframe, MS Word, Paper  </span><br>
-							Build prototype for use by researchers and patients - <span class="inline-highlight" >HTML5, CSS3, SVG, Javascript, Flash </span><br>
-							Gather feedback and improve interaction style<br>
-							Develop final product - <span class="inline-highlight" > Android Xoom , Windows </span><br>
-							</div>
-				<div class="pics">
-sds					</div>
-				</div>		
-</div>
+    #unbounds .subclass{
+    position: absolute;
+    bottom: 270px;
+    margin: 0px 0px 0px 20px;
+    height: 200px;
+    width: 500px;
+    text-align: justify;
+    text-justify: inter-word;
+    }
 
-			<div class="container">
-				<div class="title">
-					<span class="bold">Global Engineering, Engineers Without Borders</span><br>
-					<span class="underline">Raise awareness for Global Engineering with current engineering students.</span>
-				</div>
-				<div class="date">
-				Jan - Apr 2011
-				</div>
-				<div class="content">
-					Empathize with current students to establish requirements<br>
-					Refine requirements through research and analysis<br> 
-					Design posters and post them at strategic locations<br>
-					Survey students and determine project effectiveness for future projects <br>
-				</div>		
-</div>
+    #jobs .subclass{
+    border: 1px solid blue;
+    width: 48%;
+    height: 27.5%;
+    display: inline-block;
+    margin-top: 20px
+    }
+
+    #jobs #jobid{
+    border: 1px solid blue;
+    text-align: left;
+    }
+
+    #jobs #jobDesc{
+    text-align: left;
+    padding-left: 30px;
+    }
+
+    #neuro .subClass{
+    border: 1px solid blue;
+    width: 45%;
+    margin: 0px auto;
+    text-align: justify;
+    display:inline-block;
+    }
+
+    #tedx .subClass{
+    text-align: justify;
+    margin-left: 20px;;
+    margin-top:10px;
+    border: 1px solid blue;
+    width: 400px;
+    height: 175px;
+    }
+
+    #blog .subClass{
+    text-align: justify;
+    margin: 20px;
+    width: 240px;
+    }
+
+    #namank .subClass{
+
+    }
+
+  </style>
+
+  <body>
+    <div class="frame" id="education">
+      <div class="title">
+	Student
+      </div>
+      
+
+      <div id="main">
+	4A Computer Engineering, University of Waterloo.
+      </div>
+
+      <div class="subClass">
+	Software  
+      </div>
+
+      <div class="subClass">
+	Hardware
+      </div>
+
+      <div class="subClass">
+	Design
+      </div>
+
+      <div class="subClass">
+	Electronics
+      </div>
+
+    </div>
 
 
-			<div class="container">
-				<div class="title">
-					<span class="bold">TEDxWATERLOO </span><br>
-					<span class="underline">Make website the ultimate channel for information dispersal.</span>
-				</div>
-				<div class="date">
-				2011 & 2012
-				</div>
-				<div class="content">
-					Work with non-technical project manager to establish requirements and features<br>
-					Iterative development spanning over two years - <span class="inline-highlight" > HTML, Javascript, CSS3, PHP(WordPress), cPanel</span> <br>
-				</div>		
+    <div class="frame" id="research">
+      <div class="title">
+	Researcher
+      </div>
+      <div class="subClass" id="systemc">
+	SysemC to CUDA 
+	
+      </div>
+      <div class="subClass" id="asm">
+	Timing semantics to ASMs
+	
+      </div>
+      <div class="subClass" id="tm">
+	Transactional Memory on GPU
+	
+      </div>
+
+    </div>
+    <div class="frame" id="unbounds">
+      <div class="title">
+	Founder
+      </div>
+      <div class="subClass">
+<p>      UnBound Books was a startup that I helped found in May 2010. In Setember 2010, I took leave from school to work on this fulltime. Soon, we were accepted at the VeloCity Workspace at the Communitech Hub.
+Running a startup was by no accounts easy but it was without a doubt the best time of my life. It was a job requiring me to wear multiple hats. On any given day, I was expected to pitch to potential sponsors, check in with my teammates, decide our next move, design the iOS app, or run tests on the server. . </p><p>
+
+While I was mostly applying myself to the job, it was also a learning experience for me. I realized the value of business as a tool and what product design really meant. Exploring the how and the why behind such concepts helped me understand the world better. Through this understanding, I saw opportunities for improvement everywhere I looked. At the same time, I also realized that I was helpless to do anything about it.</p><p>
+
+In May of 2011, I decided to take leave from Unbound Books and return to Computer Engineering. In school, I restrcutured my degree  to focus specifically on my weaknesses and on knowledge that would help me make something of the opportunities that I had earlier discovered.</p>	
+      </div>
+      </div>
+
+    </div>
+    <div class="frame" id="jobs">
+      <div class="title">
+	Software Designer
+      </div>
+
+      <div class="subClass">
+	<div id="jobid">
+	Embedded Software Designer
 	</div>
-
-
-<div class="container">
-	<div class="title">
-		<span class="bold">Interaction Design: Invent a new Interaction Technique</span><br>
-		<span class="underline">Synthesize a novel interactive technique for user interaction in a chosen domain.</span>
+	<div id="jobDesc">
+	  aksdnalsdk
 	</div>
-	<div class="date">
-	Present
+      </div>
+      <div class="subClass">
+	<div id="jobid">
+	Simulation Co-op
 	</div>
-	<div class="content">
-		Ideate to establish a novel technique analyzing how blogs are read<br>
-		Research prior work in the field<br>
-		Prototype technique - <span class="italics">in progress</span> <br>
-		Gather feedback through a formal user study <br>
-	</div>		
-</div>
-
-
-<div class="container">
-	<div class="title">
-		<span class="bold">Earthquake Detector</span><br>
-		<span class="underline">Design and develop an iPhone utility. </span>
+	<div id="jobDesc">
+	  aksdnalsdk
 	</div>
-	<div class="date">
-	July 2012
+      </div>
+      <div class="subClass">
+	<div id="jobid">
+	Software Developer
 	</div>
-	<div class="content">
-		Requirements established by empathizing with end user and researching possible scenarios <br>
-		Design application to detect high frequencies in ambient  audio	<br>
-		Mock application UI and iterate to account for multiple use cases
-		<br>
-		Implement application and and supporting infrastructure - <span class="inline-highlight">iOS(ObjectiveC), PHP, MySQL </span> <br>
-			</div>		
-</div>
-
-<div class="container">
-	<div class="title">
-		<span class="bold">Untitled </span><br>
-		<span class="underline">Work with a professional artist to synthesize an emotionally responsive physical installation.</span>
+	<div id="jobDesc">
+	  aksdnalsdk
 	</div>
-	<div class="date">
-	Present
+      </div>
+      <div class="subClass">
+	<div id="jobid">
+	Beta Code Analyst
 	</div>
-	<div class="content">
-		Brainstorm ideas within a team of an engineer and an artist<br>
-		Synthesize idea - technologically (engineer) and aesthetically (artist)	<br>
-		Build - <span class="italics">in progress</span> <br>
-		</div>		
-</div>
-
-<div class="container">
-	<div class="title">
-		<span class="bold">www.namank.com </span><br>
-		<span class="underline">Design and develop publicly-accessible space on the internet to showcase myself.</span>
+	<div id="jobDesc">
+	  aksdnalsdk
 	</div>
-	<div class="date">
-	Present
+      </div>
+      <div class="subClass">
+	<div id="jobid">
+	Freelance Developer
 	</div>
-	<div class="content">
-		Gather requirements by empathizing with possible categories of visitors - professors, search bots, recruiters <br>
-		Design site content to portray long-term goals and current interests <br>
-		Design site interaction to convey a sense of self; including artistic and technical passions <br>
-		Build - <span class="italics">in progress</span>  - <span class="inline-highlight"> Google App Engine (Python, BigTable), Javascript, HTML, CSS </span><br>
-
-			</div>		
-</div>
-
-<div class="container">
-	<div class="title">
-		<span class="bold">Home Security, Automation, and Safety System </span><br>
-		<span class="underline">Design and build a remote controlled home security, home automation, and family safety system. </span>
+	<div id="jobDesc">
+	  aksdnalsdk
 	</div>
-	<div class="date">
-	Jan - Apr 2012
+      </div>
+      <div class="subClass">
+	<div id="jobid">
+	Database Developer
 	</div>
-	<div class="content">
-		Establish problem scope through empathy with user: family with parents and two children <br>
-		Gather requirements through past experience and questioning project supervisor<br>
-		Design user interface and simulate interaction - <span class="inline-highlight">Freehand, State Machines</span> <br>
-		Architect software using different development paradigms such as design patterns - <span class="inline-highlight">UML</span> <br>
-		Build in a team of three - <span class="inline-highlight">HTML5, CSS3, Javascript, PHP (Symfony), iOS (ObjectiveC, PhoneGap) </span> <br>
-			</div>		
-</div>
-
-<div class="container">
-	<div class="title">
-		<span class="bold">Snake </span><br>
-		<span class="underline">Design and develop game for BlackBerry PlayBook.</span>
+	<div id="jobDesc">
+	  aksdnalsdk
 	</div>
-	<div class="date">
-	February 2011
+      </div>
+      
+    </div>
+    <div class="frame" id="neuro">
+      <div class="title">
+	Designer
+      </div>
+      <div class="subClass">
+	In a team of three, I put the theory of Contextual Design into practice. This project started with interviewing neuroscientists in their natural workspace. Upon analysis of the data uncovered, patterns emerged that identified areas of improvement. We chose to focus on one area and once again started started with user interviews. This verified the patterns we had earlier discovered and helped us brainstorm solutions. 
+      </div>
+      <div class="subClass">	
+After refining and recombining the solutions, several interfaces were proposed. These  interface was designed and proposed to the nueroscientists, who critiqued it according to expected use. The agreeable design was  then converted into a high-fidelity prototype and underwent user studies. After multiple revisions, the design was built into an application for an Android tablet.
+      </div>
+    </div>
+    <div class="frame" id="tedx">
+      <div class="title">
+	Web designer
+      </div>
+      <div class="subClass">
+	TEDxWaterloo is  organized by a passionate group of volunteers. Started in 2010, it has now grown into the largest TEDx event in North America. I took over the website in 2010 and have been contributing my skills to the team of two ever since. Till today, I've seen the site through three design iterations, making this the longest project I've undertaken thus far.
 	</div>
-	<div class="content">
-		Evaluate a tablet for all possible user inputs <br>
-		Evaluate BlackBerry PlayBook for supported inputs <br>
-		Build - <span class="inline-highlight">HTML5, CSS3, Javascript </span> <br>
-		Test on simulator only; no device access <br>
-	</div>		
-</div>
-
-
-<div class="container">
-	<div class="title">
-		<span class="bold">RTOS: </span>
-		Develop a Real Time Operating System for Motorola ColdFire MFC 5208 -<span class="inline-highlight"> C, Assembly</span>
+    </div>
+    <div class="frame" id="namank">
+      <div class="title">
+	Interaction Designer
+      </div>
+      <div class="subclass">
+	Using design thinking as the guiding principle in building this side, www.namank.com, I first empathized with the end user. These were potential employers (in engineering and in design), which upon further inquiry, revealed to be search engines, HR personnel, and high level managers. Reasoning that my degree and co-op experience shows acceptable engineering expertise, I decided to focus the site primarily on the design aspect of my life. Several iterations later, I settled on a design that portrayed my long-term goals and current interests. This was best done through blog posts and portfolio respectively.   
 	</div>
-	<div class="date">
-	May - July 2010
+    </div>
+    <div class="frame" id="blog">
+      <div class="title">
+	Interaction Designer
+      </div>
+      <div class="subClass">
+	For CS889, a graduate course in Human Computer Interation, I was tasked to design a new interaction techniques. Choosing my domain to be "Interaction with Blog Post", I am designing an interface that takes into account the cognitive, social, and visualization components that are inherent in commenting on a reading a blog post. The interface is also based on the changing user demographic, technolocical advancements, and previous interfaces. Focus from ultiple perspectives lead me to expect the final result to result in development of a metaphor or model that can be used to generalize user interaction of content absorption and content creation over the internet through a screen.
 	</div>
-</div>
-
-<div class="container">
-	<div class="title">
-		<span class="bold">Compiler for Oberon:</span>
-	Parse and analyze language grammar for Oberon - <span class="inline-highlight">C</span>
-	</div>
-	<div class="date">
-	Sept - Dec 2009
-	</div>
-</div>
-
-<div class="container">
-	<div class="title">
-		<span class="bold">Music Player on NIOS II Embedded Processor:</span>
-	WAV Player as an embedded system - <span class="inline-highlight"> C </span>
-	</div>
-	<div class="date">
-	May - July 2010
-	</div>
-</div>
-
-<div class="container">
-	<div class="title">
-		<span class="bold">Processor for MIPS64 Instruction Set: </span>
-		Implement cycle accurate MIPS64 ISA - <span class="inline-highlight">Verilog</span>
-	</div>
-	<div class="date">
-	Present 
-	</div>
-</div>
-
-
-</body>
+    </div>
+    <div class="frame" id="f1">
+    </div>
+    <div class="frame" id="f1">
+    </div>
+    <div class="frame" id="f1">
+    </div>
+    <div class="frame" id="f1">
+    </div>
+    <div class="frame" id="f1">
+    </div>
+  </body>
 </html>
