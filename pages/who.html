@@ -1,6 +1,6 @@
 <style type="text/css">
 			.underline
-			{ text-decoration: underline; }
+			{ //text-decoration: underline; }
 			.italics
 			{ font-style: italic; }
 			.bold
@@ -34,7 +34,7 @@
 			.section-title
 			{
 				display: inline-block;
-				width: 100%;
+				width: 95%;
 //				border: 1px solid Blue;
 			}
 			.container
@@ -45,27 +45,36 @@
             {
                 width: 79%;
 				float: left;
-               // border: 1px solid Blue;
+//                border: 1px solid Blue;
                 margin: 1px;
             }
             .container .date
             {
                 width: 20%;
 				float: left;
-                //border: 1px solid Blue;
+//                border: 1px solid Blue;
                 margin: 1px;
             }
 
            .container .content
             {
-                width: 90%;
+                width: 82%;
 
-				padding-bottom: 10px;
+				padding-bottom: 15px;
 				float: left;
 				padding-left: 60px;
-                //border: 1px solid Blue;
+//                border: 1px solid Blue;
                 margin: 1px;
             }
+			
+			.container .img{
+//					visibility: hidden;
+				    width: 10%;
+					height:60px;
+					float: left;
+//	                border: 1px solid Blue;
+			}
+				
 				
 			.heading{
 				font-size: 25%;
@@ -90,6 +99,7 @@
 <div id="surrCont">
 	<div class="head-container">
 		<div class="right">
+			(519) 590-6536<br>
 			www.namank.com<br>
 			nkumar@uwaterloo.ca<br>
 		</div>
@@ -99,14 +109,44 @@
 		</div>
 	</div>
 
-	SELECTED PROJECTS
+	<div class="section-title">
+	OBJECTIVE
+	</div>
+	
 	<br>
-	<div style="padding-left: 50px;">
-	All projects follow Design Thinking instrumented with empathy and creativity. <br>
-	Define Objective -> Research -> Ideate Solutions -> Prototype -> Gather Feedback -> Refine Prototype. Repeat.
+	<div class="container" style="padding-bottom:15px;">
+	Design and develop new technologies that completely change how we think about the world.
 	</div>		
 	
-		<div class="container" style="padding-top: 10px;">
+	
+	<div class="section-title">
+		ACADEMICS
+	</div>
+		<div class="container">
+			<div class="title">
+				<span class="bold">4A - Honours Computer Engineering, </span> University of Waterloo. Waterloo ON
+			</div>
+			<div class="date">
+			Apr 2013
+			</div>
+			<div class="content">
+				<span style="text-decoration: underline;">Relevant Courses:</span> <br>
+				INTEG275 - <span class="inline-highlight"> Creative Thinking: </span>	Design thinking, idea generation, study of creative production <br>
+				CS889 - <span class="inline-highlight"> Interaction Design: </span>	Study of interactive techniques, design of new techniques <br>
+				CS489 - <span class="inline-highlight"> Human Computer Interaction: </span>	Contextual design, observe and study experts in their habitat <br>
+				MSci311 - <span class="inline-highlight"> Organizational Design:</span> Structuring an organization for high performance production <br>
+				ECE355 - <span class="inline-highlight"> Software Engineering:</span> Software architecture, design principles, development methodologies<br>
+			</div>		
+		</div>
+	
+	<div class="section-title">
+	SELECTED PROJECTS
+	</div>
+	<br>
+	<div style="padding-left: 50px;">
+	All projects are exercises in Design Thinking instrumented with empathy and creativity. <a href="http://www.slideshare.net/namank/design-thinking-12125190"><img src="content/r/link_icon.png" width="12" height="12" /></a>
+	</div>			
+		<div class="container" style="padding-top: 15px;">
 					<div class="title">
 					<span class="bold">Human-Computer Interaction study for interface design </span><br>
 						<span class="underline">Study an expert group of users and improve their work-practices through technology.</span>
@@ -115,25 +155,31 @@
 					Sept - Dec 2011
 					</div>
 					<div class="content">
-								Use Contextual Design to study Neuroscience Researchers in their natural space<br>
-								Build low-fidelity prototype for use by researchers and patients - <span class="inline-highlight" >HTML5, Paper, Miscellaneous materials </span><br>
-								Gather feedback and improve interaction style for final product<br>
+								Use Contextual Design to study Neuroscience Researchers in their natural workspace<br>
+								Build low-fidelity prototype for evaluation by researchers and patients - <span class="inline-highlight" >HTML5, Miscellaneous materials </span><br>
+								Conduct user studies to successfully qualify the final prototype<br>
 					</div>		
+					<div class="img">
+						<img height="70px" width="100px" src="content/r/hci.jpg" />						
+					</div>
 	</div>
 
 	<div class="container">
 		<div class="title">
-			<span class="bold">Design for interaction with a blog post</span><br> 
-			<span class="underline">Synthesize a novel interactive technique on the way people read and comment on a blog post.</span>
+			<span class="bold">Design the interaction with a blog post</span><br> 
+			<span class="underline">Synthesize a novel interaction technique around how an individual reads and comments on a blog post.</span>
 		</div>
 		<div class="date">
 		May - Aug 2012
 		</div>
 		<div class="content">
-			Analyze problem to define requirements and constraints<br>
- 			Creatively synthesize solution within the constraints and map solution to technology<br>
-			Iterate prototype multiple times based on combinations of technological constraints and user feedback<br>
+			Analyze problem to redefine as two related problems: content absorption and content creation<br>
+ 			Ideate and synthesize solutions by empathizing with the end user<br>
+			Iterate prototype based on combinations of technological constraints and user feedback<br>
 		</div>		
+		<div class="img">
+			<img height="50px" width="120px" src="content/r/blog1.png" />
+		</div>
 	</div>
 			<div class="container">
 				<div class="title">
@@ -144,10 +190,13 @@
 				Jan - Apr 2012
 				</div>
 				<div class="content">
-					Establish problem scope through user scenarios: family with parents and two children <br>
-					Design user interface and simulate interaction - <span class="inline-highlight">Freehand, State Machines</span> <br>
-					Develop product in a team of three - <span class="inline-highlight">HTML5, PHP (Symfony), iOS (ObjectiveC, PhoneGap) </span> <br>
-						</div>		
+					Establish problem scope through scenarios: family with parents and two children <br>
+					Software design was guided by interface design - <span class="inline-highlight">State Machines</span> <br>
+					System was built in a team of 3 - <span class="inline-highlight">HTML5, PHP (Symfony), iOS (ObjectiveC, PhoneGap) </span> <br>
+						</div>
+						<div class="img">
+							<img height="80px" width="150px" src="content/r/homeSecurity.png" />
+						</div> 
 			</div>
 			
 			
@@ -161,10 +210,13 @@
 					Jan - Apr 2011
 					</div>
 					<div class="content">
-						Empathize with students to add user perspective to problem<br> 
-						Design posters and hang them at strategic locations<br>
-						Survey students and determine project effectiveness for future projects <br>
-					</div>		
+						Establish current levels of student awareness to refine problem scope<br> 
+						Design posters and place them at strategic locations<br>
+						Survey students and determine effectiveness for future projects <br>
+					</div>	
+					<div class="img">
+						<img style="margin-left:25px;" height="70px" width="65px" src="content/r/ewb.png" />
+					</div>
 	</div>
 
 				<div class="container">
@@ -177,31 +229,18 @@
 					</div>
 					<div class="content">
 						Manage IT infrastructure and website development, security, and user interaction<br>
-						Work with non-technical project manager to establish requirements and features<br>
+						Successfully led by a non-technical project manager<br>
 						Iterative development spanning over two years and multiple revisions - <span class="inline-highlight" > HTML, Javascript, PHP(WordPress)</span> <br>	
-					</div>		
+					</div>
+					<div class="img">
+						<img height="70px" width="125px" src="content/r/txw.png" />
+					</div>						
 		</div>
 
 
 	<div class="container">
 		<div class="title">
-			<span class="bold">Earthquake Detector for iOS</span><br>
-			<span class="underline">Design an iPhone utility to detect earthquakes in real-time. </span>
-		</div>
-		<div class="date">
-		July 2012
-		</div>
-		<div class="content">
-			Design for detection through analysis of ambient audio and nearby iPhones<br>
-			Mock UI for different types of users and use cases for a touchscreen device
-			<br>
-			Implement application and and supporting infrastructure - <span class="inline-highlight">iOS(ObjectiveC), PHP, MySQL </span> <br>
-				</div>		
-	</div>
-
-	<div class="container">
-		<div class="title">
-			<span class="bold">Technological Art </span><br>
+			<span class="bold">TechArt </span><br>
 			<span class="underline">Work with a professional artist to synthesize an emotionally responsive physical installation.</span>
 		</div>
 		<div class="date">
@@ -209,28 +248,15 @@
 		</div>
 		<div class="content">
 			Brainstorm ideas within a team of an engineer and an artist<br>
-			Develop an idea - technologically (engineer) and aesthetically (artist)	<br>
+			Develop final idea - technologically (engineer) and aesthetically (artist)	<br>
 			Map final idea to technological domain for implementation - <span class="italics">in progress</span> <br>
-			</div>		
+			</div>	
+			<div class="img">
+				<img height="70px" width="125px" src="content/r/art.png" />
+			</div>				
 	</div>
 
 	<div class="container">
-		<div class="title">
-			<span class="bold">www.namank.com </span><br>
-			<span class="underline">Design and develop publicly-accessible space on the internet to showcase self.</span>
-		</div>
-		<div class="date">
-		Present
-		</div>
-		<div class="content">
-			Gather requirements by empathizing with possible categories of visitors - professors, search bots, recruiters <br>
-			Design site content to portray long-term goals, current interests, and motivations <br>
-			Build - <span class="italics">in progress</span>  - <span class="inline-highlight"> Google App Engine (Python, BigTable), HTML5 </span><br>
-
-				</div>		
-	</div>
-
-	<div class="container" style="page-break-before:always;">
 		<div class="title">
 			<span class="bold">RTOS: </span>
 			Develop a Real Time Operating System for Motorola ColdFire MFC 5208 -<span class="inline-highlight"> C, Assembly</span>
@@ -239,17 +265,7 @@
 		May - July 2010
 		</div>
 	</div>
-	
-	<div class="container">
-		<div class="title">
-			<span class="bold">Compiler for Oberon:</span>
-		Parse and analyze language grammar for Oberon - <span class="inline-highlight">C</span>
-		</div>
-		<div class="date">
-		Sept - Dec 2009
-		</div>
-	</div>
-	
+		
 	<div class="container">
 		<div class="title">
 			<span class="bold">Music Player on NIOS II Processor:</span>
@@ -260,32 +276,39 @@
 		</div>
 	</div>
 
-	<div class="container">
+	<div class="container" style="page-break-after:always;">
 		<div class="title">
-			<span class="bold">Digital Integrated Circuits:</span>
-			Implement an adder and a high speed flip-flop - <span class="inline-highlight">Cadence</span>
+			<span class="bold">Digital Integrated Electronics:</span>
+			Design an adder and a high speed flip-flop - <span class="inline-highlight">Cadence</span>
 		</div>
 		<div class="date">
 		May - Aug 2012 
 		</div>
 	</div>
+	
+	<div class="section-title" style="padding-top:20px; ">	
+	INDUSTRY EXPERIENCE
+	</div>
+
 
 
 	<div class="container">
 		<div class="title">
-			<span class="bold">Processor for MIPS64 Instruction Set: </span>
-			Implement cycle accurate MIPS64 ISA - <span class="inline-highlight">Verilog</span>
+			<span class="bold">Freelance Developer</span>
 		</div>
 		<div class="date">
-		May - Aug 2012 
 		</div>
+		<div class="content">
+					Design and develop various server-supported iOS application <br>
+					Design and develop targeted webpages to serve specific client needs  </span><br>
+					Teach basic web development<br>
+		</div>		
+		<div class="img">
+		</div>		
 	</div>
+
 
 	
-	<div class="section-title" style="page-break-before:always; padding-top:10px; ">	
-	</div>
-
-	WORK EXPERIENCE
 	<div class="container">
 		<div class="title">
 			<span class="bold">Founder</span> -  Unbound Books. Waterloo ON
@@ -298,19 +321,8 @@
 					Design and develop the IT infrastructure - <span class="inline-highlight"> server-supported Android, iOS, and BlackBerry clients </span><br>
 					Learn about startup business models and strategic thinking<br>
 		</div>		
-	</div>
-
-	<div class="container">
-		<div class="title">
-			<span class="bold">Embedded Software Designer</span> - Radio Performance, RIM. Ottawa ON
-		</div>
-		<div class="date">
-		Jan - Apr 2010
-		</div>
-		<div class="content">
-			Design and develop application (native) to test data throughput on BlackBerry devices - <span class="inline-highlight">  Java </span> <br>
-			Gather and analyze data to isolate and resolve processor and radio issues - <span class="inline-highlight"> MS Excel, Scripts </span> <br>
-			Test code with in-lab network simulators - <span class="inline-highlight"> Agilent 8960, Spirent for CDMA </span> <br>
+		<div class="img">
+			<img height="50px" width="120px" src="content/r/unbounds.png" />						
 		</div>		
 	</div>
 
@@ -325,8 +337,11 @@
 			Design and develop mail server simulator to test and analyze server performance <br>
 			Learn on the job: multithreaded implementation using timers and delegates - <span class="inline-highlight"> C# </span> <br>
 			Document requirements, design strategy, implementation details, and scalability options  <br>
-		</div>		
+		</div>	
+		<div class="img">
+		</div>	
 	</div>
+	
 		<div class="container">
 			<div class="title">
 				<span class="bold">Software Developer </span>- Enterprise Performance Eng., RIM. Waterloo ON
@@ -339,6 +354,8 @@
 						Redesign existing user-facing application for usability and batch input processing -<span class="inline-highlight">  C#</span><br>
 						Extend existing tools to support multiple protocols and redesign for scalability<br>
 			</div>		
+			<div class="img">
+			</div>
 	</div>
 			<div class="container">
 				<div class="title">
@@ -348,52 +365,22 @@
 				Jan - Apr 2008
 				</div>
 				<div class="content">
-					Develop an online collaborative space to suit team&#39;s requirements - <span class="inline-highlight"> WAMP, JavaScript</span><br>
-							Develop and support customer-facing (external) tool conforming to ISO standards - <span class="inline-highlight"> PHP, MS SQL, JavaScript</span><br>
-							All work audited for security and robustness by the Information Security department<br>
+					Develop an online project management space to suit team&#39;s needs - <span class="inline-highlight"> WAMP, JavaScript</span><br>
+							Develop customer-facing (external) tool conforming to ISO standards - <span class="inline-highlight"> PHP, MS SQL, JavaScript</span><br>
+							Work with end-users at every stage in the development cycle<br>
 				</div>		
-	</div>
-
-	ACADEMICS
-	<div class="container">
-		<div class="title">
-			<span class="bold">4A - Honours Computer Engineering, </span> University of Waterloo. Waterloo ON
-		</div>
-		<div class="date">
-		Apr 2013
-		</div>
-		<div class="content">
-			<span class="underline">Relevant Courses:</span> <br>
-			INTEG275 - <span class="inline-highlight"> Creative Thinking: </span>	Design thinking, idea generation, study of creative production <br>
-			CS889 - <span class="inline-highlight"> Interaction Design: </span>	Study of interactive techniques, design of new techniques <br>
-			CS489 - <span class="inline-highlight"> Human Computer Interaction: </span>	Contextual design, observe and study experts in their habitat <br>
-			MSci311 - <span class="inline-highlight"> Organizational Design:</span> Structuring an organization for high performance production <br>
-			ECE355 - <span class="inline-highlight"> Software Engineering:</span> Software architecture, design principles, development methodologies<br>
-		</div>		
+				<div class="img">
+				</div>
 	</div>
 	
-	
-	<div class="container">
-		<div class="title">
-			<span class="bold">Student Researcher</span>, Computer Architecture and Embedded Systems Research group, UW. ON
-		</div>
-		<div class="date">
-		Present
-		</div>
-		<div class="content">
-			Developing software to enable parallel simulation of SystemC - <span class="inline-highlight"> C++, CUDA </span> <br>
-			Add timing semantics to Abstract State Machines - <span class="inline-highlight"> Java</span><br>
-			Explore GPU code generation using Abstract State Machines - <span class="inline-highlight"> Java, OpenCL </span><br>
-			Explore Transactional Memory implementation using GPU - <span class="inline-highlight"> C, CUDA </span><br>
-		</div>		
-	</div>
-
+	<div class="section-title">
 	AWARDS
+	</div>
 
 	<div class="container">
 		<div class="title">
-			1<sup>st</sup> - <span class="bold"> Waterloo Senior Design Competition:</span>
-			Ideate, design, build working prototype in 6 hrs
+			<span class="bold"> Waterloo Senior Design Competition:</span> - 
+			Ideate, design, build working prototype in 6 hrs - 1<sup>st</sup>
 		</div>
 		<div class="date">
  			2010
@@ -402,8 +389,7 @@
 
 	<div class="container">
 		<div class="title">
-			 Top Rookie Team & 3<sup>rd</sup> overall - <span class="bold">SFF Debate Competition:</span>
-			 Defend "Professor Tenure"
+	<span class="bold">SFF Debate Competition:</span>  - defend "Professor Tenureship" - Top Rookie Team & 3<sup>rd</sup> overall
 		</div>
 		<div class="date">
  			2011
@@ -412,17 +398,21 @@
 
 	<div class="container">
 		<div class="title">
-			 Runner-up - <span class="bold">Siemens Plantville Competition:</span> Optimize three manufacturing plants 
+		<span class="bold">Siemens Plantville Competition:</span> Optimize three manufacturing plants - Runner-up
 		</div>
 		<div class="date">
  			2012
 		</div>
 	</div>
-	<br /><br />
-<br />
-<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
 
+	<div class="section-title">
 	EXTRA CURRICULAR
+	</div>
 
 <div class="container">
 	<div class="title">
@@ -431,7 +421,7 @@
 </div>
 <div class="container">
 	<div class="title">
-		 <span class="bold">Art:</span> Piano, Drawing, Dancing
+		 <span class="bold">Art:</span> Piano, Dancing, Writing
 	</div>
 </div>
 <div class="container">
