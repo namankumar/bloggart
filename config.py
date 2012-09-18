@@ -32,11 +32,12 @@ post_path_format = '/%(slug)s'
 # enough, you can edit themes/default/base.html instead.
 sidebars = [
   ("designer", [
-  	'<a href="http://www.namank.com/who">portfolio</a>',
+  	'<a href="http://www.namank.com/who">who</a>',
+ 	'<a href="http://www.namank.com/portfolio">portfolio</a>',
     '<a href="http://ca.linkedin.com/in/namankumar">linkedin</a>',
- 	'<a href="https://github.com/namankumar">open source</a>', 
  ]),
  ('around', [
+	'<a href="https://github.com/namankumar">open source</a>', 
 	'<a href="http://www.quora.com/Naman-Kumar">quora</a>',
  	'<a href="http://www.twitter.com/naman_k">twitter</a>',
  ]),

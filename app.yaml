@@ -1,5 +1,5 @@
 application: namanlab
-version: 1_3
+version: 1_6
 runtime: python
 api_version: 1
 
@@ -19,6 +19,24 @@ handlers:
 - url: /remote_api
   script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
   login: admin
+
+- url: /portfolio
+  static_files: content/portfolio_design.pdf
+  upload: content/portfolio_design.pdf
+
+- url: /projects
+  static_files: content/portfolio_hci.pdf
+  upload: content/portfolio_hci.pdf
+
+
+#- url: /content/r/([^/]+)
+ # static_files: content/r/\1
+  #upload: content/r/([^/]+)
+      
+- url: /content/([^/]+)/(.*)
+  static_files: content/\1/\2
+  upload: content/[^/]+/.*
+
 
 - url: /_ah/queue/deferred
   script: deferred.py
